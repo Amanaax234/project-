@@ -1,0 +1,92 @@
+
+
+  <!-- <div class="main-content">
+  
+  </div> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dr. Sindhia Lingaswamy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top-bar">
+    <button class="hamburger" onclick="toggleSidebar()">☰</button>
+    <span class="site-title" id="siteTitle">Dr. Sindhia Lingaswamy</span>
+  </header>
+
+  <div class="overlay" onclick="toggleSidebar()"></div>
+
+  <aside class="sidebar" id="sidebar">
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="introduction.html">Introduction</a></li>
+        <li><a href="#cv">Curriculum Vitae</a></li>
+         <li><a href="qualifications.html"> Qualifications</a></li>
+        <li><a href="academicExperience.html">Professional Experiences</a></li>
+         <li><a href="#awards">Awards and Achievements</a></li>
+        <li><a href="publications.html">Research Contributions</a></li>
+         <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+    
+      <div class="contact-section" id="contact">
+  <h2>Contact Me</h2>
+  <div class="contact-details">
+    <p><strong>Media Research Lab</strong><br>
+    Department of Information Technology<br>
+    Anna University, MIT Campus, Chromepet<br>
+    Chennai - 600044, India</p>
+
+    <p><strong>Phone (Direct):</strong> +91 - 44 - 22516019<br>
+    <strong>Office Phone:</strong> +91 - 44 - 22516020<br>
+    <strong>Fax:</strong> +91 - 44 - 22232403 <em>[Attn: IT Dept]</em></p>
+
+    <p><strong>Email (Official):</strong><br>
+    <a href="mailto:sindhia@annauniv.edu">sindhia@annauniv.edu</a><br>
+    <a href="mailto:sindhia@mitindia.edu">sindhia@mitindia.edu</a></p>
+
+    <p><strong>Email (Personal):</strong><br>
+    <a href="mailto:sindhia.personal@gmail.com">sindhia.personal@gmail.com</a></p>
+
+    <p><strong>Google Maps Location:</strong><br>
+    <a href="https://www.google.com/maps?q=MIT+Campus,+Chromepet,+Chennai+600044" target="_blank" class="maps-link">View on Google Maps</a></p>
+  </div>
+
+  <!-- Optional Google Maps Embed -->
+  <div class="map-frame">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62250.55596894852!2d80.0995024186347!3d12.951905047255705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525fd00c8b11f3%3A0xfaa72f47a763bfff!2sMIT%20Campus%2C%20Anna%20University!5e0!3m2!1sen!2sin!4v1719426577000!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</div>
+
+    <footer class="bottom-nav">
+  <a href="home.html">Home</a>
+ <a href="introduction.html"># Introduction</a>
+ <a href="#research">#Research Contribution</a>
+ <a href="qualifications.html">#qualifications</a>
+ <a href="academicExperience.html">#experience</a>
+ <a href="publications.html">#publications</a>
+ <a href="#awards">#awards</a>
+ <a href="contact.html">#Contact Me</a>
+      
+      </p>
+    </footer>
+  </main>
+
+  <script>
+    function toggleSidebar() {
+      document.getElementById("sidebar").classList.toggle("open");
+      document.querySelector(".overlay").classList.toggle("show");
+      document.getElementById("siteTitle").classList.toggle("shift-left");
+    }
+  </script>
+</body>
+</html>
+
+

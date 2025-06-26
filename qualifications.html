@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dr. Sindhia Lingaswamy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top-bar">
+    <button class="hamburger" onclick="toggleSidebar()">☰</button>
+    <span class="site-title" id="siteTitle">Dr. Sindhia Lingaswamy</span>
+  </header>
+
+  <div class="overlay" onclick="toggleSidebar()"></div>
+
+  <aside class="sidebar" id="sidebar">
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="introduction.html">Introduction</a></li>
+        <li><a href="#cv">Curriculum Vitae</a></li>
+         <li><a href="qualifications.html">Qualifications</a></li>
+        <li><a href="academicExperience.html">Professional Experiences</a></li>
+         <li><a href="#awards">Awards and Achievements</a></li>
+        <li><a href="publications.html">Research Contributions</a></li>
+         <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+     
+    <div class="education-section" id="education">
+  <h2>Educational Qualifications</h2>
+
+  <div class="education-grid">
+
+    <div class="edu-card">
+      <h3>Ph.D. in Computer Vision</h3>
+      <p><strong>University:</strong> Anna University – MIT Campus, Chennai</p>
+      <p><strong>Year:</strong> 2019</p>
+    </div>
+
+    <div class="edu-card">
+      <h3>M.E. in Computer Science & Engineering</h3>
+      <p><strong>University:</strong> Manonmaniam Sundaranar University, Tirunelveli</p>
+      <p><strong>Year:</strong> 2006</p>
+      <p><strong>Grade:</strong> First Class</p>
+    </div>
+
+    <div class="edu-card">
+      <h3>B.E. in Information Technology</h3>
+      <p><strong>College:</strong> Arulmigu Kalasalingam College of Engineering</p>
+      <p><strong>University:</strong> Madurai Kamaraj University</p>
+      <p><strong>Year:</strong> 2004</p>
+      <p><strong>Grade:</strong> First Class</p>
+    </div>
+
+    <div class="edu-card">
+      <h3>HSC (Maths - Biology)</h3>
+      <p><strong>Board:</strong> State Board</p>
+      <p><strong>Year:</strong> 2000</p>
+      <p><strong>Grade:</strong> First Class</p>
+    </div>
+
+    <div class="edu-card">
+      <h3>SSLC</h3>
+      <p><strong>Board:</strong> State Board</p>
+      <p><strong>Year:</strong> 1998</p>
+      <p><strong>Subjects:</strong> Maths, Science, Social Science</p>
+      <p><strong>Grade:</strong> First Class</p>
+    </div>
+
+  </div>
+</div>
+    <footer class="bottom-nav">
+ <a href="home.html">Home</a>
+ <a href="introduction.html"># Introduction</a>
+ <a href="#research">#Research Contribution</a>
+ <a href="qualifications.html">#qualifications</a>
+ <a href="academicExperience.html">#experience</a>
+ <a href="publications.html">#publications</a>
+ <a href="#awards">#awards</a>
+ <a href="contact.html">#Contact Me</a>
+      
+    </footer>
+  </main>
+
+  <script>
+    function toggleSidebar() {
+      document.getElementById("sidebar").classList.toggle("open");
+      document.querySelector(".overlay").classList.toggle("show");
+      document.getElementById("siteTitle").classList.toggle("shift-left");
+    }
+    document.addEventListener("DOMContentLoaded", () => {
+    const cards = document.querySelectorAll('.edu-card');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = 1;
+          entry.target.style.transform = "translateY(0)";
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    cards.forEach(card => {
+      card.style.opacity = 0;
+      card.style.transform = "translateY(40px)";
+      observer.observe(card);
+    });
+  });
+  </script>
+ 
+
+</body>
+</html>

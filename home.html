@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dr. Sindhia Lingaswamy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top-bar">
+    <button class="hamburger" onclick="toggleSidebar()">☰</button>
+    <span class="site-title" id="siteTitle">Dr. Sindhia Lingaswamy</span>
+  </header>
+
+  <div class="overlay" onclick="toggleSidebar()"></div>
+
+  <aside class="sidebar" id="sidebar">
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="introduction.html">Introduction</a></li>
+        <li><a href="#cv">Curriculum Vitae</a></li>
+         <li><a href="qualifications.html">Qualifications</a></li>
+        <li><a href="academicExperience.html">Professional Experiences</a></li>
+         <li><a href="#awards">Awards and Achievements</a></li>
+        <li><a href="publications.html">Research Contributions</a></li>
+         <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+    <section class="intro" id="intro">
+      <h1>Welcome to the Home Page of</h1>
+      <h2>Dr. Sindhia Lingaswamy</h2>
+      <h3>Department of CA</h3>
+      <h3>NIT TRICHY</h3>
+      <p class="research-interest">
+        <strong>Research Interests:</strong> Signal Processing, AI in Healthcare, Embedded Systems, Biomedical Imaging
+      </p>
+      <img src="313782.jpg" alt="Dr. Sindhia Lingaswamy" class="profile-photo">
+    </section>
+
+    <footer class="bottom-nav">
+ <a href="home.html">Home</a>
+ <a href="introduction.html"># Introduction</a>
+ <a href="#research">#Research Contribution</a>
+ <a href="qualifications.html">#qualifications</a>
+ <a href="academicExperience.html">#experience</a>
+ <a href="publications.html">#publications</a>
+ <a href="#awards">#awards</a>
+ <a href="contact.html">#Contact Me</a>
+      
+      </p>
+    </footer>
+  </main>
+
+  <script>
+    function toggleSidebar() {
+      document.getElementById("sidebar").classList.toggle("open");
+      document.querySelector(".overlay").classList.toggle("show");
+      document.getElementById("siteTitle").classList.toggle("shift-left");
+    }
+  </script>
+</body>
+</html>

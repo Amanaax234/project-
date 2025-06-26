@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dr. Sindhia Lingaswamy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top-bar">
+    <button class="hamburger" onclick="toggleSidebar()">☰</button>
+    <span class="site-title" id="siteTitle">Dr. Sindhia Lingaswamy</span>
+  </header>
+
+  <div class="overlay" onclick="toggleSidebar()"></div>
+
+  <aside class="sidebar" id="sidebar">
+    <nav>
+      <ul>
+        <li><a href="introduction.html">Introduction</a></li>
+        <li><a href="#cv">Curriculum Vitae</a></li>
+         <li><a href="qualifications.html">Qualifications</a></li>
+        <li><a href="academicExperience.html">Professional Experiences</a></li>
+         <li><a href="#awards">Awards and Achievements</a></li>
+        <li><a href="publications.html">Research Contributions</a></li>
+         <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+   
+
+
+  <div class="academic-experience-section" id="academic">
+  <h2>Professional-Academic Experiences</h2>
+  <div class="experience-card">
+    <p><strong>Assistant Professor</strong><br>NIT Trichy<br><span>Sept 2022 – Present</span></p>
+  </div>
+  <div class="experience-card">
+    <p><strong>Assistant Professor (Senior Grade)</strong><br>VIT – Chennai Campus<br><span>June 2020 – Sept 2022</span></p>
+  </div>
+  <div class="experience-card">
+    <p><strong>Assistant Professor</strong><br>BSA Crescent Institute of S&T, Chennai<br><span>June 2019 – Jan 2020</span></p>
+  </div>
+  <div class="experience-card">
+    <p><strong>Assistant Professor</strong><br>Sri Shakthi IET, Coimbatore<br><span>June 2017 – April 2019</span></p>
+  </div>
+  <div class="experience-card">
+    <p><strong>Lecturer</strong><br>Dhanalakshmi Srinivasan CET, Mamallapuram<br><span>June 2010 – May 2011</span></p>
+  </div>
+  <div class="experience-card">
+    <p><strong>Lecturer</strong><br>Anand Institute of Higher Technology, Chennai<br><span>June 2008 – June 2009</span></p>
+  </div>
+  <div class="experience-card">
+    <p><strong>Lecturer</strong><br>Hindustan College of Engineering, Chennai<br><span>July 2006 – May 2008</span></p>
+  
+</div>
+
+
+    <footer class="bottom-nav1">
+ <a href="introduction.html"># Introduction</a>
+ <a href="#research">#Research Contribution</a>
+ <a href="qualifications.html">#qualifications</a>
+ <a href="#experience">#experience</a>
+ <a href="publications.html">#publications</a>
+ <a href="#awards">#awards</a>
+ <a href="contact.html">#Contact Me</a>
+      
+      </p>
+    </footer>
+  </main>
+
+  <script>
+    function toggleSidebar() {
+      document.getElementById("sidebar").classList.toggle("open");
+      document.querySelector(".overlay").classList.toggle("show");
+      document.getElementById("siteTitle").classList.toggle("shift-left");
+    }
+  </script>
+</body>
+</html>

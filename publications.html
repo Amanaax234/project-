@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dr. Sindhia Lingaswamy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top-bar">
+    <button class="hamburger" onclick="toggleSidebar()">☰</button>
+    <span class="site-title" id="siteTitle">Dr. Sindhia Lingaswamy</span>
+  </header>
+
+  <div class="overlay" onclick="toggleSidebar()"></div>
+
+  <aside class="sidebar" id="sidebar">
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="introduction.html">Introduction</a></li>
+        <li><a href="#cv">Curriculum Vitae</a></li>
+         <li><a href="qualifications.html"> Qualifications</a></li>
+        <li><a href="academicExperience.html">Professional Experiences</a></li>
+         <li><a href="awards.html">Awards and Achievements</a></li>
+        <li><a href="publications.html">Research Contributions</a></li>
+         <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+   <div class="publications-section" id="publications">
+  <h2>Publications</h2>
+
+  <h3>(A) Refereed Research Journals</h3>
+  <ul class="pub-list">
+    <li>
+      <a href="#" >
+        “Fruit-Fly Optimization Based Feature Integration in Image Retrieval”
+      </a>, <em>Journal of Mathematical Biosciences and Engineering</em> (Scopus Indexed), Impact Factor: 2.08
+    </li>
+    <li>
+      <a href="#" >
+        “Foreground Estimation via Structured Gaussian Scale Mixture Modeling”
+      </a>, <em>Journal of Emerging Technologies and Innovative Research</em> (UGC Approved)
+    </li>
+    <li>
+      <a href="#" >
+        “Brain Tumor Detection using MRI Images by Classification and Segmentation”
+      </a>, <em>International Journal of Medical Science</em> (UGC Approved)
+    </li>
+    <li>
+      <a href="#" target="_blank">
+        “An Efficient Moving Object Detection and Tracking System based on Fractional Derivative”
+      </a>, <em>Multimedia Tools and Applications</em> (Springer), Impact Factor: 1.541
+    </li>
+    <li>
+      <a href="#" >
+        “Tracking of Objects using Color and Spatio-Temporal Context”
+      </a>, <em>Journal of Advanced Research in Dynamical and Control Systems</em> (Scopus Indexed)
+    </li>
+  </ul>
+
+  <h3>(B) Conferences / Workshops / Symposia</h3>
+  <ul class="pub-list">
+    <li>
+      <a href="#" >
+        “Drowsiness Detection System”
+      </a>, National Conference on Advances in IT & Computing – 2021, Hyderabad (Best Paper Award)
+    </li>
+    <li>
+      <a href="#">
+        “University News Portal with Chatbot Support”
+      </a>, National Conference – 2021, Hyderabad (Best Paper Award)
+    </li>
+    <li>
+      <a href="#" >
+        “Efficient Detection of Multiple Moving Objects in Temporal Domain”
+      </a>, ICRTIT – 2016, MIT, Chennai (IEEE Explore)
+    </li>
+    <li>
+      <a href="#" >
+        “Integration of Poses for Object Tracking”
+      </a>, ICRTIT – 2014, MIT, Chennai (IEEE Explore)
+    </li>
+  </ul>
+
+  <h3>(C) View More</h3>
+  <p>
+    🔗 <a href="https://scholar.google.com/sindhia" target="_blank">Google Scholar Profile</a><br>
+    🔗 <a href="https://www.researchgate.net/profile/Sindhia_Lingaswamy" target="_blank">ResearchGate</a>
+  </p>
+</div>
+
+
+
+    <footer class="bottom-nav">
+ <a href="home.html">Home</a>
+ <a href="introduction.html"># Introduction</a>
+ <a href="#research">#Research Contribution</a>
+ <a href="qualifications.html">#qualifications</a>
+ <a href="academicExperience.html">#experience</a>
+ <a href="publications.html">#publications</a>
+ <a href="awards.html">#awards</a>
+ <a href="contact.html">#Contact Me</a>
+      
+      </p>
+    </footer>
+  </main>
+
+  <script>
+    function toggleSidebar() {
+      document.getElementById("sidebar").classList.toggle("open");
+      document.querySelector(".overlay").classList.toggle("show");
+      document.getElementById("siteTitle").classList.toggle("shift-left");
+    }
+  </script>
+</body>
+</html>

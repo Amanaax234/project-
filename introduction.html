@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dr. Sindhia Lingaswamy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top-bar">
+    <button class="hamburger" onclick="toggleSidebar()">☰</button>
+    <span class="site-title" id="siteTitle">Dr. Sindhia Lingaswamy</span>
+  </header>
+
+  <div class="overlay" onclick="toggleSidebar()"></div>
+
+  <aside class="sidebar" id="sidebar">
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#cv">Curriculum Vitae</a></li>
+         <li><a href="qualifications.html">Qualifications</a></li>
+        <li><a href="academicExperience.html">Professional Experiences</a></li>
+         <li><a href="#awards">Awards and Achievements</a></li>
+        <li><a href="#research">Research Contributions</a></li>
+         <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+      <div class="intro-section" id="introduction">
+  <div class="intro-content">
+    <h2>Introduction</h2>
+    <p><strong>Dr. Sindhia Lingaswamy</strong> received her Bachelor of Engineering (B.E.) in Information Technology from Arulmigu Kalasalingam College of Engineering, affiliated to Madurai Kamaraj University, in the year 2004. She completed her Master of Engineering (M.E.) in Computer Science and Engineering from Manonmaniam Sundaranar University, Tirunelveli, in 2006.</p>
+
+    <p>In recognition of her research work in the domain of Computer Vision, she was awarded the degree of Doctor of Philosophy (Ph.D.) by Anna University – Madras Institute of Technology (MIT) Campus, Chennai, in 2019.</p>
+
+    <p>Presently, she is serving as an <strong>Assistant Professor</strong> in the Department of Information Technology at Anna University, MIT Campus, Chennai.</p>
+
+    <p>Dr. Sindhia’s research interests lie in the areas of <strong>Computer Vision</strong>, <strong>Image Processing</strong>, <strong>Artificial Intelligence</strong>, and <strong>Machine Learning</strong>. Her work focuses on developing efficient algorithms for visual understanding and analysis, with applications in intelligent systems and automated environments.</p>
+
+    <p>She has also contributed to interdisciplinary research that bridges core computing with real-world problem-solving in areas such as <em>medical imaging</em> and <em>pattern recognition</em>.</p>
+
+    <p>As a dedicated academician and researcher, she continues to mentor students and guide research initiatives aimed at addressing contemporary challenges through technological innovation.</p>
+  </div>
+</div>
+
+    <footer class="bottom-nav">
+ <a href="home.html">Home</a>
+ <a href="#introduction"># Introduction</a>
+ <a href="#research">#Research Contribution</a>
+ <a href="qualifications.html">#qualifications</a>
+ <a href="academicExperience.html">#experience</a>
+ <a href="publications.html">#publications</a>
+ <a href="#awards">#awards</a>
+ <a href="contact.html">#Contact Me</a>
+      
+      </p>
+    </footer>
+  </main>
+
+  <script>
+    function toggleSidebar() {
+      document.getElementById("sidebar").classList.toggle("open");
+      document.querySelector(".overlay").classList.toggle("show");
+      document.getElementById("siteTitle").classList.toggle("shift-left");
+    }
+  </script>
+</body>
+</html>
