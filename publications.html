@@ -5,6 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dr. Sindhia Lingaswamy</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Dropdown menu styles */
+    .dropdown-toggle {
+      display: block;
+      cursor: pointer;
+      padding: 8px 12px;
+      color: white;
+      font-weight: bold;
+      border-radius: 4px;
+      transition: background 0.2s ease;
+    }
+
+    .dropdown-toggle:hover {
+      background-color: #444;
+    }
+
+    .submenu {
+      display: none;
+      padding-left: 15px;
+      margin-top: 5px;
+    }
+
+    .submenu li a {
+      font-size: 14px;
+      color: #ccc;
+      text-decoration: none;
+      display: block;
+      padding: 6px 10px;
+      border-radius: 4px;
+    }
+
+    .submenu li a:hover {
+      background-color: #333;
+      color: #fff;
+    }
+
+    .dropdown.open .submenu {
+      display: block;
+    }
+  </style>
 </head>
 <body>
   <header class="top-bar">
@@ -14,16 +54,31 @@
 
   <div class="overlay" onclick="toggleSidebar()"></div>
 
-  <aside class="sidebar" id="sidebar">
+   <aside class="sidebar" id="sidebar">
     <nav>
       <ul>
         <li><a href="home.html">Home</a></li>
         <li><a href="introduction.html">Introduction</a></li>
         <li><a href="#cv">Curriculum Vitae</a></li>
-         <li><a href="qualifications.html"> Qualifications</a></li>
+        <li><a href="qualifications.html">Qualifications</a></li>
         <li><a href="academicExperience.html">Professional Experiences</a></li>
-         <li><a href="awards.html">Awards and Achievements</a></li>
-        <li><a href="publications.html">Research Contributions</a></li>
+        <li><a href="#awards">Awards and Achievements</a></li>
+
+        <!-- Dropdown for Publications -->
+        <li class="dropdown">
+          <span class="dropdown-toggle" onclick="toggleDropdown(this)">
+            List of Publications ▼
+          </span>
+          <ul class="submenu">
+            <li><a href="publications.html">Journals</a></li>
+            <li><a href="international_conferences.html">International Conferences</a></li>
+            <li><a href="national_conferences.html">National Conferences</a></li>
+          </ul>
+        </li>
+           <li><a href="professional_memberships.html">Professional Memberships</a></li>
+          <li><a href="program_organized.html">Program Organized</a></li>
+         <li><a href="additional_info.html">Additional Information</a></li>
+         <li><a href="photo_gallery.html">Photo Gallery</a></li>
          <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
@@ -36,12 +91,12 @@
   <h3>(A) Refereed Research Journals</h3>
   <ul class="pub-list">
     <li>
-      <a href="#" >
+      <a href="https://www.aimspress.com/aimspress-data/mbe/2021/5/PDF/mbe-18-05-309.pdf" >
         “Fruit-Fly Optimization Based Feature Integration in Image Retrieval”
       </a>, <em>Journal of Mathematical Biosciences and Engineering</em> (Scopus Indexed), Impact Factor: 2.08
     </li>
     <li>
-      <a href="#" >
+      <a href="" >
         “Foreground Estimation via Structured Gaussian Scale Mixture Modeling”
       </a>, <em>Journal of Emerging Technologies and Innovative Research</em> (UGC Approved)
     </li>
@@ -51,12 +106,12 @@
       </a>, <em>International Journal of Medical Science</em> (UGC Approved)
     </li>
     <li>
-      <a href="#" target="_blank">
+      <a href="https://link.springer.com/article/10.1007/s11042-018-5843-6" target="_blank">
         “An Efficient Moving Object Detection and Tracking System based on Fractional Derivative”
       </a>, <em>Multimedia Tools and Applications</em> (Springer), Impact Factor: 1.541
     </li>
     <li>
-      <a href="#" >
+      <a href="https://d1wqtxts1xzle7.cloudfront.net/62291835/4.120200306-73944-1d4x2ud-libre.pdf?1583537460=&response-content-disposition=inline%3B+filename%3DTracking_of_Objects_Using_Color_and_Defi.pdf&Expires=1752216422&Signature=W47Gy1osv-DzVT5VFi1dpq-nftHYVaAyHi0-99Sqc6vjZnbJJkkolv~~j2YpS5wCtqKGjGR-VT8MZGuHQp6~GYcytXAz7hppF4MEWmpsHpKEXj3a~-WcrswbiQEOjg-Jqnz0VNaMsFIRRD386oIQS73MvpqZcn8~aI9mgwTfqIgc-nNwbHJtzPBg~NXFgRXuIOJPFoKm8dUI1jZhSdZGF5aXQpoyNHnhoqa2XZEhKKOjO4eK~ssqhQ24xAjTz5WjyZozxUFFNynsGK8GYuLkooK7n7wnpjM4mR6G5urmB-sin5u5mkUFmQNM-abnQ01wY6cmIDDqGg5xyo4WXQjJcQ__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA" >
         “Tracking of Objects using Color and Spatio-Temporal Context”
       </a>, <em>Journal of Advanced Research in Dynamical and Control Systems</em> (Scopus Indexed)
     </li>
@@ -75,12 +130,12 @@
       </a>, National Conference – 2021, Hyderabad (Best Paper Award)
     </li>
     <li>
-      <a href="#" >
+      <a href="https://ieeexplore.ieee.org/abstract/document/7569582" >
         “Efficient Detection of Multiple Moving Objects in Temporal Domain”
       </a>, ICRTIT – 2016, MIT, Chennai (IEEE Explore)
     </li>
     <li>
-      <a href="#" >
+      <a href="https://ieeexplore.ieee.org/abstract/document/6996119" >
         “Integration of Poses for Object Tracking”
       </a>, ICRTIT – 2014, MIT, Chennai (IEEE Explore)
     </li>
@@ -93,20 +148,23 @@
   </p>
 </div>
 
-
-
-    <footer class="bottom-nav">
- <a href="home.html">Home</a>
- <a href="introduction.html"># Introduction</a>
- <a href="#research">#Research Contribution</a>
- <a href="qualifications.html">#qualifications</a>
- <a href="academicExperience.html">#experience</a>
- <a href="publications.html">#publications</a>
- <a href="awards.html">#awards</a>
- <a href="contact.html">#Contact Me</a>
-      
-      </p>
+   <footer class="bottom-nav">
+      <a href="home.html">Home</a>
+      <a href="introduction.html"># Introduction</a>
+      <a href="#research">#Research Contribution</a>
+      <a href="qualifications.html">#qualifications</a>
+      <a href="academicExperience.html">#experience</a>
+      <a href="publications.html">#publications</a>
+      <a href="#awards">#awards</a>
+        <a href="#professional_memberships.html">Professional Memberships</a>
+          <a href="#program_organized.html">Program Organized</a>
+         <a href="#additional_info.html">Additional Information</a>
+         <a href="#photo_gallery.html">Photo Gallery</a>
+         <a href="#contact.html">Contact</a>
+      <a href="#contact.html">#Contact Me</a>
     </footer>
+
+   
   </main>
 
   <script>
@@ -114,6 +172,18 @@
       document.getElementById("sidebar").classList.toggle("open");
       document.querySelector(".overlay").classList.toggle("show");
       document.getElementById("siteTitle").classList.toggle("shift-left");
+    }
+
+     function toggleDropdown(element) {
+      const parent = element.parentElement;
+      parent.classList.toggle('open');
+
+      // Toggle arrow direction
+      if (element.textContent.includes("▼")) {
+        element.textContent = element.textContent.replace("▼", "▲");
+      } else {
+        element.textContent = element.textContent.replace("▲", "▼");
+      }
     }
   </script>
 </body>

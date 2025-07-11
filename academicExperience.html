@@ -1,10 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Dr. Sindhia Lingaswamy</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Dropdown menu styles */
+    .dropdown-toggle {
+      display: block;
+      cursor: pointer;
+      padding: 8px 12px;
+      color: white;
+      font-weight: bold;
+      border-radius: 4px;
+      transition: background 0.2s ease;
+    }
+
+    .dropdown-toggle:hover {
+      background-color: #444;
+    }
+
+    .submenu {
+      display: none;
+      padding-left: 15px;
+      margin-top: 5px;
+    }
+
+    .submenu li a {
+      font-size: 14px;
+      color: #ccc;
+      text-decoration: none;
+      display: block;
+      padding: 6px 10px;
+      border-radius: 4px;
+    }
+
+    .submenu li a:hover {
+      background-color: #333;
+      color: #fff;
+    }
+
+    .dropdown.open .submenu {
+      display: block;
+    }
+  </style>
 </head>
 <body>
   <header class="top-bar">
@@ -14,61 +54,85 @@
 
   <div class="overlay" onclick="toggleSidebar()"></div>
 
-  <aside class="sidebar" id="sidebar">
+   <aside class="sidebar" id="sidebar">
     <nav>
       <ul>
+        <li><a href="home.html">Home</a></li>
         <li><a href="introduction.html">Introduction</a></li>
         <li><a href="#cv">Curriculum Vitae</a></li>
-         <li><a href="qualifications.html">Qualifications</a></li>
+        <li><a href="qualifications.html">Qualifications</a></li>
         <li><a href="academicExperience.html">Professional Experiences</a></li>
-         <li><a href="#awards">Awards and Achievements</a></li>
-        <li><a href="publications.html">Research Contributions</a></li>
+        <li><a href="#awards">Awards and Achievements</a></li>
+
+        <!-- Dropdown for Publications -->
+        <li class="dropdown">
+          <span class="dropdown-toggle" onclick="toggleDropdown(this)">
+            List of Publications ▼
+          </span>
+          <ul class="submenu">
+            <li><a href="publications.html">Journals</a></li>
+            <li><a href="international_conferences.html">International Conferences</a></li>
+            <li><a href="national_conferences.html">National Conferences</a></li>
+          </ul>
+        </li>
+           <li><a href="professional_memberships.html">Professional Memberships</a></li>
+          <li><a href="program_organized.html">Program Organized</a></li>
+         <li><a href="additional_info.html">Additional Information</a></li>
+         <li><a href="photo_gallery.html">Photo Gallery</a></li>
          <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </aside>
-
   <main class="main-content">
-   
+    <div class="academic-experience-section" id="academic">
+      <h2>Professional-Academic Experiences</h2>
 
+      <a href="https://www.nitt.edu/" class="experience-card">
+        <p><strong>Assistant Professor</strong><br>NIT Trichy<br><span>Sept 2022 – Present</span></p>
+      </a>
 
-  <div class="academic-experience-section" id="academic">
-  <h2>Professional-Academic Experiences</h2>
-  <div class="experience-card">
-    <p><strong>Assistant Professor</strong><br>NIT Trichy<br><span>Sept 2022 – Present</span></p>
-  </div>
-  <div class="experience-card">
-    <p><strong>Assistant Professor (Senior Grade)</strong><br>VIT – Chennai Campus<br><span>June 2020 – Sept 2022</span></p>
-  </div>
-  <div class="experience-card">
-    <p><strong>Assistant Professor</strong><br>BSA Crescent Institute of S&T, Chennai<br><span>June 2019 – Jan 2020</span></p>
-  </div>
-  <div class="experience-card">
-    <p><strong>Assistant Professor</strong><br>Sri Shakthi IET, Coimbatore<br><span>June 2017 – April 2019</span></p>
-  </div>
-  <div class="experience-card">
-    <p><strong>Lecturer</strong><br>Dhanalakshmi Srinivasan CET, Mamallapuram<br><span>June 2010 – May 2011</span></p>
-  </div>
-  <div class="experience-card">
-    <p><strong>Lecturer</strong><br>Anand Institute of Higher Technology, Chennai<br><span>June 2008 – June 2009</span></p>
-  </div>
-  <div class="experience-card">
-    <p><strong>Lecturer</strong><br>Hindustan College of Engineering, Chennai<br><span>July 2006 – May 2008</span></p>
-  
-</div>
+      <a href="https://chennai.vit.ac.in/" class="experience-card">
+        <p><strong>Assistant Professor (Senior Grade)</strong><br>VIT – Chennai Campus<br><span>June 2020 – Sept 2022</span></p>
+      </a>
 
+      <a href="https://crescent.education/" class="experience-card">
+        <p><strong>Assistant Professor</strong><br>BSA Crescent Institute of S&T, Chennai<br><span>June 2019 – Jan 2020</span></p>
+      </a>
 
-    <footer class="bottom-nav1">
- <a href="introduction.html"># Introduction</a>
- <a href="#research">#Research Contribution</a>
- <a href="qualifications.html">#qualifications</a>
- <a href="#experience">#experience</a>
- <a href="publications.html">#publications</a>
- <a href="#awards">#awards</a>
- <a href="contact.html">#Contact Me</a>
-      
-      </p>
+      <a href="https://www.siet.ac.in/" class="experience-card">
+        <p><strong>Assistant Professor</strong><br>Sri Shakthi IET, Coimbatore<br><span>June 2017 – April 2019</span></p>
+      </a>
+
+      <a href="https://www.dscet.ac.in/" class="experience-card">
+        <p><strong>Lecturer</strong><br>Dhanalakshmi Srinivasan CET, Mamallapuram<br><span>June 2010 – May 2011</span></p>
+      </a>
+
+      <a href="https://aiht.ac.in/" class="experience-card">
+        <p><strong>Lecturer</strong><br>Anand Institute of Higher Technology, Chennai<br><span>June 2008 – June 2009</span></p>
+      </a>
+
+      <a href="https://hindustanuniv.ac.in/" class="experience-card">
+        <p><strong>Lecturer</strong><br>Hindustan College of Engineering, Chennai<br><span>July 2006 – May 2008</span></p>
+      </a>
+    </div>
+
+    
+   <footer class="bottom-nav">
+      <a href="home.html">Home</a>
+      <a href="introduction.html"># Introduction</a>
+      <a href="#research">#Research Contribution</a>
+      <a href="qualifications.html">#qualifications</a>
+      <a href="academicExperience.html">#experience</a>
+      <a href="publications.html">#publications</a>
+      <a href="#awards">#awards</a>
+        <a href="#professional_memberships.html">Professional Memberships</a>
+          <a href="#program_organized.html">Program Organized</a>
+         <a href="#additional_info.html">Additional Information</a>
+         <a href="#photo_gallery.html">Photo Gallery</a>
+         <a href="#contact.html">Contact</a>
+      <a href="#contact.html">#Contact Me</a>
     </footer>
+
   </main>
 
   <script>
@@ -76,6 +140,17 @@
       document.getElementById("sidebar").classList.toggle("open");
       document.querySelector(".overlay").classList.toggle("show");
       document.getElementById("siteTitle").classList.toggle("shift-left");
+    }
+     function toggleDropdown(element) {
+      const parent = element.parentElement;
+      parent.classList.toggle('open');
+
+      // Toggle arrow direction
+      if (element.textContent.includes("▼")) {
+        element.textContent = element.textContent.replace("▼", "▲");
+      } else {
+        element.textContent = element.textContent.replace("▲", "▼");
+      }
     }
   </script>
 </body>

@@ -207,7 +207,6 @@ body {
 .shift-left {
   margin-left: 200px; /* Adjust based on your sidebar width */
 }
-
 .academic-experience-section {
   padding: 40px 20px;
   max-width: 900px;
@@ -230,20 +229,20 @@ body {
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 8px;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  text-decoration: none;
+  display: block;
 }
 
 .experience-card:hover {
   transform: translateY(-5px);
-  background-color:rgb(31, 172, 141);;
- 
-   
+  background-color: #1abc9c;
+  color: #ffffff;
 }
 
 .experience-card p {
   margin: 0;
-  color: #2c3e50;
   line-height: 1.6;
 }
 
@@ -258,9 +257,16 @@ body {
   font-size: 14px;
   color: #7f8c8d;
 }
+
+.experience-card:hover strong,
+.experience-card:hover span {
+  color: #ffffff;
+}
+
 .experience-card:last-child {
   margin-bottom: 5px;
 }
+
 footer.bottom-nav1 {
   margin-top: 20px;
   padding: 10px 20px;
